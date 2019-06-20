@@ -74,7 +74,11 @@ def total_data_extraction(input_dir, path ,new_processed_directory):
     return testing_for_json_data
 ```
 #### Output Screenshot 
-![Output image](https://ibb.co/Kjc9s0w)
+<p align="center">
+  <img src="(https://ibb.co/Kjc9s0w" width="350" title="hover text">
+ 
+</p>
+
 
 #### Any modification and suggestion are welcome 
 
