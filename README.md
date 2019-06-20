@@ -9,9 +9,17 @@
 * Postman ( for visualizing api ) 
 
 
+#### Python packages used 
+* glob
+* shutil
+* re
+* os
+* subprocess
+
 #### System Environment 
  * Windows
  * Ubuntu (only few modification will required ) 
+ 
  
 #### Procedure 
 
@@ -19,6 +27,10 @@ Make virtual environments( Use Anaconda platform for better visualization) and i
 Download poppler tools and extract it, open the bin folder and place your python executable file there. Open the postman and run the python executable and pass the localhost url to the postman as POST request. You also need to pass list of pdfs which need to be executed.
 after execution, Programe will dynamically create and process directory based on timestamp. The programe is created in such a way that you can pass a batch of files as a POST request.
 
+#### Output Screenshot 
+
+<a href="https://ibb.co/Kjc9s0w"><img src="https://i.ibb.co/d0sQpWg/output.png" alt="output" border="0"></a>
+ 
 
 #### Sample Code
 
@@ -73,10 +85,6 @@ def total_data_extraction(input_dir, path ,new_processed_directory):
 
     return testing_for_json_data
 ```
-#### Output Screenshot 
-
-<a href="https://ibb.co/Kjc9s0w"><img src="https://i.ibb.co/d0sQpWg/output.png" alt="output" border="0"></a>
- 
 
 
 #### Any modification and suggestion are welcome 
