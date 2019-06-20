@@ -50,9 +50,25 @@ after execution, Programe will dynamically create and process directory based on
             return jsonify(filetest.total_data_extraction(path_new, path, new_processed_directory))
     
  ```
-```python
-s = "Python syntax highlighting"
-print s
+```def total_data_extraction(input_dir, path ,new_processed_directory):
+    '''Pass the input directory where all the pdf file is availble'''
+    print(input_dir)
+    testing_for_json_data={}
+    for filename in glob.glob(os.path.join(input_dir, '*.pdf')):
+        dir_name = re.split("[.]",filename)[-2]
+        image_working_directory = os.path.basename(dir_name)
+        print(dir_name)
+        now = datetime.datetime.today()
+        nTime = now.strftime("%d-%m-%Y")
+        dest = os.path.join(image_working_directory+nTime)
+        new_dest = os.path.join(path, dest)
+        print(new_dest)
+        pdf_input_name = os.path.basename(input_dir)
+        pro_dir = 'instance\processed'
+        testing_for_json_data[image_working_directory] = image_exporter(filename, output_dir=new_dest, image_name=pdf_input_name)
+        shutil.move(filename, new_processed_directory+'\\'+(filename.split("\\")[-1]))
+
+    return testing_for_json_data
 ```
 #### Output Screenshot 
 
