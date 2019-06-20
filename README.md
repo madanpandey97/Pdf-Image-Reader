@@ -50,8 +50,7 @@ after execution, Programe will dynamically create and process directory based on
             return jsonify(filetest.total_data_extraction(path_new, path, new_processed_directory))
     
  ```
-
-    ######  Module for data processing 
+ 
     ```
     def total_data_extraction(input_dir, path ,new_processed_directory):
     '''Pass the input directory where all the pdf file is availble'''
