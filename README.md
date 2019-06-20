@@ -20,8 +20,9 @@ Download poppler tools and extract it, open the bin folder and place your python
 after execution, Programe will dynamically create and process directory based on timestamp. The programe is created in such a way that you can pass a batch of files as a POST request.
 
 
-#### Sample Code 
-     ##### Flask module for all Image_data_extraction 
+#### Sample Code
+
+    ##### Flask module for all Image_data_extraction 
      
   ```  
         @app.route('/uploader', methods = ['GET', 'POST'])
@@ -73,6 +74,7 @@ def total_data_extraction(input_dir, path ,new_processed_directory):
     return testing_for_json_data
 ```
 #### Output Screenshot 
+![Output image](https://ibb.co/Kjc9s0w)
 
 #### Any modification and suggestion are welcome 
 
