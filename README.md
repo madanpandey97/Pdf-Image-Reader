@@ -75,7 +75,7 @@ def total_data_extraction(input_dir, path ,new_processed_directory):
 ```
 #### Output Screenshot 
 <p align="center">
-  <img src="(https://ibb.co/Kjc9s0w" width="350" title="hover text">
+  <img src="https://ibb.co/Kjc9s0w" width="350" title="hover text">
  
 </p>
 
