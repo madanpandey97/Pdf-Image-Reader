@@ -12,8 +12,7 @@ try:
 except ImportError:
     import Image
 import pytesseract
-#
-# #@app.route("/imagedata", methods = ['POST'])
+
 def total_data_extraction(input_dir, path ,new_processed_directory):
     '''Pass the input directory where all the pdf file is availble'''
     print(input_dir)
